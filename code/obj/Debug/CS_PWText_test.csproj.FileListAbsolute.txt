@@ -1,0 +1,9 @@
+C:\Users\jashliao\Desktop\192_168_1_68 API\20210401\SYWEB-V8-Workstation(Delta)\CS_PWText_test\bin\Debug\CS_PWText_test.exe.config
+C:\Users\jashliao\Desktop\192_168_1_68 API\20210401\SYWEB-V8-Workstation(Delta)\CS_PWText_test\obj\Debug\CS_PWText_test.csprojResolveAssemblyReference.cache
+C:\Users\jashliao\Desktop\192_168_1_68 API\20210401\SYWEB-V8-Workstation(Delta)\CS_PWText_test\bin\Debug\CS_PWText_test.exe
+C:\Users\jashliao\Desktop\192_168_1_68 API\20210401\SYWEB-V8-Workstation(Delta)\CS_PWText_test\bin\Debug\CS_PWText_test.pdb
+C:\Users\jashliao\Desktop\192_168_1_68 API\20210401\SYWEB-V8-Workstation(Delta)\CS_PWText_test\obj\Debug\CS_PWText_test.exe
+C:\Users\jashliao\Desktop\192_168_1_68 API\20210401\SYWEB-V8-Workstation(Delta)\CS_PWText_test\obj\Debug\CS_PWText_test.pdb
+C:\Users\jashliao\Desktop\CS_PWText_test\code\bin\Debug\CS_PWText_test.exe.config
+C:\Users\jashliao\Desktop\CS_PWText_test\code\obj\Debug\CS_PWText_test.exe
+C:\Users\jashliao\Desktop\CS_PWText_test\code\obj\Debug\CS_PWText_test.pdb
