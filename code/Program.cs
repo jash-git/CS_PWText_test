@@ -52,39 +52,54 @@ namespace CS_PWText_test
             {
                 if (item01.Value.Length >= 4)//連續英文或連續數字的子字串長度大於四，才要判斷是否為相同字元或者為連續字元
                 {
-                    int index = 0;//陣列指標
-                    int count = 0;//連續比對計數器[四個數，要三次]
-                    char chrbuf = '\0';//前一個字元暫存
-                    int intvar0 = 0;//變化量
-                    int sum = 0;
-                    foreach (char c in item01.Value)
+                    int intTime = 0;
+                    int intStart = 0;
+                    int intMax = item01.Value.Length;
+                    do
                     {
-                        if (index > 0)
-                        {
-                            intvar0 = Math.Abs(Convert.ToInt32(chrbuf) - Convert.ToInt32(c));//計算遞增方向
+                        String StrValue = item01.Value.Substring(intStart + (intTime *1), ((intMax - (intTime * 1)) > 4) ? 4 : ((intMax - (intTime * 1))));
 
-                            if (intvar0 > 1)//字串各字元之間是否為依序排列
+                        int index = 0;//陣列指標
+                        int count = 0;//連續比對計數器[四個數，要三次]
+                        char chrbuf = '\0';//前一個字元暫存
+                        int intvar0 = 0;//變化量
+                        int sum = 0;
+                        foreach (char c in StrValue)
+                        {
+                            if (index > 0)
                             {
-                                sum = 0;
-                                intvar0 = 0;
-                                count = 0;
-                                continue;
+                                intvar0 = Math.Abs(Convert.ToInt32(chrbuf) - Convert.ToInt32(c));//計算遞增方向
+
+                                if (intvar0 > 1)//字串各字元之間是否為依序排列
+                                {
+                                    sum = 0;
+                                    intvar0 = 0;
+                                    count = 0;
+                                    continue;
+                                }
+                                else
+                                {
+                                    sum += intvar0;
+                                    count++;
+                                }
                             }
-                            else
+                            chrbuf = c;
+                            index++;
+
+                            if ((count == 3) && ((sum == -3) || (sum == 3) || (sum == 0)))//找到 四個連續的字元 或 四個相同字元
                             {
-                                sum += intvar0;
-                                count++;
+                                isPass = false;
+                                break;
                             }
                         }
-                        chrbuf = c;
-                        index++;
 
-                        if ((count == 3) && ((sum == -3) || (sum == 3) || (sum == 0)))//找到 四個連續的字元 或 四個相同字元
+                        intTime++;
+                        if (!isPass)
                         {
-                            isPass = false;
                             break;
                         }
-                    }
+                    } while (intMax > (intTime*1));
+
                 }
 
                 if (!isPass)
@@ -121,6 +136,8 @@ namespace CS_PWText_test
             string h = "a12212";
             //測試9：滿足條件
             string i = "aB12212";
+            //測試10：數字連續
+            string j = "aB1221234";
             //輸出結果：
             Console.WriteLine("a字串結果：" + JLCheckVerify(a));
             Console.WriteLine("b字串結果：" + JLCheckVerify(b));
@@ -131,6 +148,7 @@ namespace CS_PWText_test
             Console.WriteLine("g字串結果：" + JLCheckVerify(g));
             Console.WriteLine("h字串結果：" + JLCheckVerify(h));
             Console.WriteLine("i字串結果：" + JLCheckVerify(i));
+            Console.WriteLine("j字串結果：" + JLCheckVerify(j));
             Pause();
         }
     }

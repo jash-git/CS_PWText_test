@@ -7,3 +7,11 @@ C:\Users\jashliao\Desktop\192_168_1_68 API\20210401\SYWEB-V8-Workstation(Delta)\
 C:\Users\jashliao\Desktop\CS_PWText_test\code\bin\Debug\CS_PWText_test.exe.config
 C:\Users\jashliao\Desktop\CS_PWText_test\code\obj\Debug\CS_PWText_test.exe
 C:\Users\jashliao\Desktop\CS_PWText_test\code\obj\Debug\CS_PWText_test.pdb
+C:\Users\devel\Desktop\GITHUB\CS_PWText_test\code\bin\Debug\CS_PWText_test.exe.config
+C:\Users\devel\Desktop\GITHUB\CS_PWText_test\code\bin\Debug\CS_PWText_test.exe
+C:\Users\devel\Desktop\GITHUB\CS_PWText_test\code\bin\Debug\CS_PWText_test.pdb
+C:\Users\devel\Desktop\GITHUB\CS_PWText_test\code\obj\Debug\CS_PWText_test.csproj.AssemblyReference.cache
+C:\Users\devel\Desktop\GITHUB\CS_PWText_test\code\obj\Debug\CS_PWText_test.csproj.SuggestedBindingRedirects.cache
+C:\Users\devel\Desktop\GITHUB\CS_PWText_test\code\obj\Debug\CS_PWText_test.csproj.CoreCompileInputs.cache
+C:\Users\devel\Desktop\GITHUB\CS_PWText_test\code\obj\Debug\CS_PWText_test.exe
+C:\Users\devel\Desktop\GITHUB\CS_PWText_test\code\obj\Debug\CS_PWText_test.pdb
